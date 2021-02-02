@@ -421,7 +421,8 @@ CONFIG_SETEND_EMULATION=y
 #
 # Boot options
 #
-CONFIG_CMDLINE=""
+CONFIG_CMDLINE="audit=0 selinux=0 console=tty0"
+CONFIG_CMDLINE_EXTEND=y
 # CONFIG_EFI is not set
 # CONFIG_BUILD_ARM64_APPENDED_DTB_IMAGE is not set
 
