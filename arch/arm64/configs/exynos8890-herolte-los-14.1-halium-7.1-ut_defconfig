@@ -4299,6 +4299,7 @@ CONFIG_AUTOFS4_FS=y
 CONFIG_FUSE_FS=y
 # CONFIG_CUSE is not set
 # CONFIG_OVERLAY_FS is not set
+CONFIG_LBDAF=y
 
 #
 # Caches
