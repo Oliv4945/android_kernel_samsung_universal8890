@@ -89,7 +89,6 @@ static int s2mpb02_led_get_en_value(struct s2mpb02_led_data *led_data, int on)
 static void s2mpb02_led_set(struct led_classdev *led_cdev,
 						enum led_brightness value)
 {
-#if 0 /* disable LED control by other sysfs */
 	unsigned long flags;
 	struct s2mpb02_led_data *led_data
 		= container_of(led_cdev, struct s2mpb02_led_data, led);
@@ -101,7 +100,6 @@ static void s2mpb02_led_set(struct led_classdev *led_cdev,
 	spin_unlock_irqrestore(&led_data->value_lock, flags);
 
 	schedule_work(&led_data->work);
-#endif
 }
 
 static void led_set(struct s2mpb02_led_data *led_data)
